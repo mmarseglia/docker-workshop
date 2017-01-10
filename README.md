@@ -1,3 +1,8 @@
+Pre-Reqs
+* Vagrant
+* Virtualbox
+* Git
+
 Training Materials:
 * Github repository, Docker Orchestration Workshop, https://github.com/jpetazzo/orchestration-workshop
 * Slides, Advanced Docker and Orchestration, https://jpetazzo.github.io/orchestration-workshop/
