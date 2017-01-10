@@ -6,15 +6,16 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
+  config.vm.network "public_network"
   (1..5).each do |count|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
+  #
   config.vm.define "docker#{count}" do |docker|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   docker.vm.box = "centos/7"
-
   docker.vm.provision "shell", path: "install_docker.sh"
   docker.vm.provision "shell", inline: "yum -y install git"
 
