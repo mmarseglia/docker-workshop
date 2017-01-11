@@ -1,13 +1,25 @@
-Pre-Reqs
+## Introduction
+I took this amazing docker workshop at LISA16 and wanted my own VMs to play with.  This will spin up 5 VMs using Vagrant, install docker and install the docker orchestration workshop from @jpetazzo.
+
+## Pre-Reqs
 * Vagrant
 * Virtualbox
 * Git
 
-Training Materials:
+## Instructions
+This will create five CentOS 7 VMs with Docker, Docker Machine and Docker Compose.
+
+1. Clone this repository.
+2. Run `vagrant up`
+3. You will have five VMs, docker1 ... docker5.
+
+## Mandatory Training Materials
+These training materials are specific to the orchestration workshop.
+
 * Github repository, Docker Orchestration Workshop, https://github.com/jpetazzo/orchestration-workshop
 * Slides, Advanced Docker and Orchestration, https://jpetazzo.github.io/orchestration-workshop/
 
-Supplemental Materials:
+## Supplemental Training Materials
 The following material will deepen your knowledge of how Docker and supporting technology works.
 
 Intro to Docker 
@@ -36,10 +48,3 @@ Building 12 Factor Applications
 Linux Kernel IPVS load balancer 
 * http://www.linuxvirtualserver.org/software/ipvs.html
 * https://www.youtube.com/watch?v=oFsJVV1btDU&index=5&list=PLkA60AVN3hh87OoVra6MHf2L4UR9xwJkv
-
-## Instructions
-This will create five CentOS 7 VMs with Docker, Docker Machine and Docker Compose.
-
-1. Clone this repository.
-2. Run `vagrant up`
-3. You will have five VMs, docker1 ... docker5.
