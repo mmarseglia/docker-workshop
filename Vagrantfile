@@ -3,6 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.network "public_network"
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox" 
     (1..5).each do |count|
     config.vm.define "docker#{count}" do |docker|
       docker.vm.box = "centos/7"
