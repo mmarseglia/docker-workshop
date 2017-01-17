@@ -5,6 +5,8 @@ I took this amazing docker workshop at LISA16 and wanted my own VMs to play with
 * Vagrant
 * Virtualbox
 * Git
+* vbguest vagrant plugin, https://github.com/dotless-de/vagrant-vbguest
+  * install with: `vagrant plugin install vagrant-vbguest`
 
 ## Instructions
 This will create five CentOS 7 VMs with Docker, Docker Machine and Docker Compose.
